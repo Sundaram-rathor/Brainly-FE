@@ -7,10 +7,15 @@ import { Button } from "../Button";
 import { ChatIcon } from "../icons/ChatIcon";
 import { motion } from "framer-motion";
 
-
+interface DataItem {
+    title: string;
+    link: string;
+    type: 'twitter' | 'youtube'
+  }
+  
 export function SharePage() {
     const { shareLink } = useParams();
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<DataItem[] |null>(null);
     const [username, setUsername] = useState('');
     const [isModalOpen, setModalOpen] = useState(false);
     const [socket, setSocket] = useState<WebSocket | null>(null);
