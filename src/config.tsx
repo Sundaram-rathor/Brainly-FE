@@ -1,1 +1,1 @@
-export const BACKEND_URI ="https://brainly-be-production.up.railway.app/";
+export const BACKEND_URI ="https://brainly-be-production.up.railway.app";
