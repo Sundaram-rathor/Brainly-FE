@@ -2,7 +2,7 @@ import { ReactElement } from "react"
 
 interface ButtonProps{
     text?: string,
-    variant?: 'primary' | 'secondary' ,
+    variant: 'primary' | 'secondary' ,
     startIcon?: ReactElement,
     onClick : ()=>void,
     auth?: boolean,
